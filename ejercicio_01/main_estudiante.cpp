@@ -2,14 +2,14 @@
 #include <iostream>
 
 int main() {
-    // 1. Crear un estudiante usando el constructor por defecto
+    // estudiante usando el constructor 
     Estudiante est1;
 
     std::cout << "--- Datos iniciales del estudiante (Default) ---" << std::endl;
     est1.mostrarInformacionCompleta();
 
-    // 2. Actualizar atributos usando Setters
-    est1.actualizarNombre("Juan Perez");
+    // Actualizar Setters
+    est1.actualizarNombre("Agustin Poot");
     est1.actualizarCodigo("A0012345");
     est1.actualizarEdad(20);
     est1.actualizarPromedio(8.5);
@@ -18,7 +18,7 @@ int main() {
     std::cout << "\n--- Datos tras actualizar atributos ---" << std::endl;
     est1.mostrarInformacionCompleta();
 
-    // 3. Probar métodos de utilidad
+    // métodos de utilidad
     std::cout << "\nIncrementando edad y mejorando promedio..." << std::endl;
     est1.incrementarEdad();
     est1.actualizarPromedio(9.5);

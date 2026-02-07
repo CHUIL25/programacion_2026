@@ -1,6 +1,5 @@
 #include "estudiante.h"
 
-// Constructor por defecto
 Estudiante::Estudiante() {
     nombre = "";
     codigo = "";
@@ -9,16 +8,16 @@ Estudiante::Estudiante() {
     activo = false;
 }
 
-// Constructor parametrizado
+
 Estudiante::Estudiante(std::string n, std::string c, int e, float p, bool a) {
     nombre = n;
     codigo = c;
     edad = e;
-    actualizarPromedio(p); // Validamos desde la creación
+    actualizarPromedio(p); 
     activo = a;
 }
 
-// Implementación de Setters
+
 void Estudiante::actualizarNombre(std::string n) { nombre = n; }
 void Estudiante::actualizarCodigo(std::string c) { codigo = c; }
 void Estudiante::actualizarEdad(int e) { edad = e; }
@@ -32,14 +31,14 @@ void Estudiante::actualizarPromedio(float p) {
     }
 }
 
-// Implementación de Getters
+// Getters
 std::string Estudiante::obtenerNombre() { return nombre; }
 std::string Estudiante::obtenerCodigo() { return codigo; }
 int Estudiante::obtenerEdad() { return edad; }
 float Estudiante::obtenerPromedio() { return promedio; }
 bool Estudiante::obtenerActivo() { return activo; }
 
-// Métodos de Visualización
+// Visualización
 void Estudiante::mostrarNombre() { std::cout << "Nombre: " << nombre << std::endl; }
 void Estudiante::mostrarCodigo() { std::cout << "Codigo: " << codigo << std::endl; }
 void Estudiante::mostrarEdad() { std::cout << "Edad: " << edad << " años" << std::endl; }
