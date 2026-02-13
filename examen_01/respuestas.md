@@ -1,4 +1,4 @@
-    >>>PREGUNTAS<<<
+    PREGUNTAS
 
 1.	## Define clases: ##
 
