@@ -3,7 +3,7 @@
 // Constructor por defecto
 celulares::celulares() {
     modelo = "Generico";
-    color = "";
+    color = "verde";
     precio = 0;
     disponible = false;
 }
